@@ -1,5 +1,5 @@
 {
-  "proxy": "https://bmsaver-server.herokuapp.com",
+  "proxy": "https://kind-rose-angelfish-cape.cyclic.app",
   "name": "bmsaver",
   "version": "0.1.0",
   "private": true,
