@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+/* NAV */
+.btn-full-width {
+    width: 100%;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+.navbar-brand, navbar-toggle{
+    color: #bababa !important;
+}
+
+li .btn{
+    margin: 2px;
+}
+#info-badge{
+    cursor: default;
+}
+
+/* CONTAINER */
+.container{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+
+}
+
+/* CARD */
+.headstick {
+    /* background-color: blueviolet; */
+    color: #fff;
+    height: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+.tags-bar {
+    /* background-color: blueviolet; */
+    color: #fff;
+    padding: 2px;
+    margin: 0;
+    
+}
+.tags-container{
+    min-height: 48px;
+    text-transform: uppercase;
+}
+
+.card {
+    /* da togliere  */
+    margin-top: 20px;
+    max-width: 18rem;
+    background-color: snow;
+    margin: 1rem;
+
+}
+
+/* inserire colore tema */
+.card:hover {
+    background-color: seashell;
+}
+.card-text {
+    min-height: 192px;
+}
+.card-title {
+    min-height: 48px;
+    text-transform: uppercase;
+}
+
+
+.go-button {
+    background-color: #198754;
+    color: #fff;
+    width: 100%;
+}
+
+.go-button:hover {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.hamb-icon:hover{
+    font-size: 1.2rem;
+}
+
+.curtain {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(90,90,90);
+    background-color: rgba(90,90,90, 0.9);
+    overflow: hidden;
+    transition: 0.3s;
+}
+.curtain a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	color: #c0c0c0;
+}
+.curtain .closebtn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+}
+
+.curt-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.curt-content > * {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+/****MODAL COLOR ******/
+.stile{
+    margin: 5px;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .sel{
+    animation: selected-animation 20s linear infinite;
+    background-clip: content-box;
+    padding: 2px;
+  }
+  
+  @keyframes selected-animation {
+    from {
+      opacity: 0;
+    }
+    5%{
+      opacity: 1;
+    
+    }
+    to{
+      transform: rotateZ(360deg);
+    }
+  }
+
+  /* BOOKMARK modifica */
+.add-btn{
+    float: right !important;
+}
+.tags-lab{
+    width: 100%;
+}
+
+.tags-selector{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tag-to-select{
+    margin-right: 0.5rem;
+}
+
+/* ACCOUNT */
+
+.nav-tabs .nav-link{
+    background-color:#198754 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* border-color: blue red black; */
+    background-color: blue !important;
+}
+
+
+
+form.signup, form.login {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #198754;
+    color: #000;
+    border-radius: 4px;
+  }
+  form button {
+    background: cornflowerblue;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  form button:hover{
+    background: #fff;
+    color: #198754;
+
+  }
+  .login input, .signup input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ form a{
+    color: #fff;
+    text-decoration: none;
+ }
+ div.error {
+    padding: 10px;
+    background: #ffefef;
+    border: 2px solid #aa1000;
+    color: #aa1000;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+/* @media only screen and (max-width: 767px) {
+    .card {
+      min-width: none;
+      max-width: 18rem;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .container {
+      justify-content: flex-start;
+    }
+  } */
