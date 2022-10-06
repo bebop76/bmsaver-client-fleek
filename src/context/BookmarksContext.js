@@ -29,7 +29,7 @@ export const BookmarksContextProvider = ({ children }) => {
         deleteTags: async function () {
             totTags.map(async ttd => {
                 if (ttd.ischeck === true) {
-                    const response = await fetch('/api/tags/' + ttd._id, {
+                    const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/tags/' + ttd._id, {
                         method: 'DELETE',
                         headers: {
                             'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ export const BookmarksContextProvider = ({ children }) => {
                 }
             })
 
-            const response = await fetch('/api/tags', {
+            const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/tags', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -95,7 +95,7 @@ export const BookmarksContextProvider = ({ children }) => {
             bookToAdd.tags.map(item => {
                 return delete item.ischeck
             })
-            const response = await fetch('/api/bookmarks', {
+            const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/bookmarks', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ export const BookmarksContextProvider = ({ children }) => {
                 return delete itm.ischeck
             })
 
-            const response = await fetch('/api/bookmarks/' + bookUpdated._id, {
+            const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/bookmarks/' + bookUpdated._id, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ export const BookmarksContextProvider = ({ children }) => {
             const json = await response.json()
             if (response.ok) {
 
-                const upd = await fetch('/api/bookmarks/', {
+                const upd = await fetch('https://bitter-queen-4450.on.fleek.co/api/bookmarks/', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ export const BookmarksContextProvider = ({ children }) => {
 
         },
         deleteBookmark: async function (bookToDel) {
-            const response = await fetch('/api/bookmarks/' + bookToDel._id, {
+            const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/bookmarks/' + bookToDel._id, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
