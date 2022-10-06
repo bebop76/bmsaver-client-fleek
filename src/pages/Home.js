@@ -22,7 +22,7 @@ function Home() {
           'Authorization': `Bearer ${user.token}`
         },
       }
-      const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/bookmarks', opt)
+      const response = await fetch('https://kind-rose-angelfish-cape.cyclic.app/api/bookmarks', opt)
       const json = await response.json()
 
       if (response.ok) {
@@ -37,7 +37,7 @@ function Home() {
 
   useEffect(() => {
     const fetchTags = async () => {
-      const response = await fetch('https://bitter-queen-4450.on.fleek.co/api/tags', {
+      const response = await fetch('https://kind-rose-angelfish-cape.cyclic.app/api/tags', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       })
